@@ -1,0 +1,95 @@
+name: smart_parking_app
+description: "Smart Parking Management System - A comprehensive solution for parking spot management with real-time availability, reservations, and AI-powered predictions."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Navigation
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  animations: ^2.0.8
+  
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  cloud_functions: ^4.6.0
+  firebase_storage: ^11.5.6
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Location & Maps
+  geolocator: ^10.1.0
+  google_maps_flutter: ^2.5.0
+  geocoding: ^2.1.1
+  
+  # Payment
+  stripe_payment: ^1.1.4
+  
+  # HTTP & API
+  http: ^1.1.2
+  dio: ^5.4.0
+  
+  # Utilities
+  intl: ^0.19.0
+  shared_preferences: ^2.2.2
+  image_picker: ^1.0.4
+  permission_handler: ^11.1.0
+  
+  # AR & Camera
+  camera: ^0.10.5+5
+  
+  # QR Code
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  
+  # Animations & UI Enhancement
+  lottie: ^2.7.0
+  shimmer: ^3.0.0
+  cached_network_image: ^3.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/maps/
+    
+  # Custom fonts using Google Fonts (loaded dynamically)
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700
