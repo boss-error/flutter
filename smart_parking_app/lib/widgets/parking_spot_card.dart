@@ -246,7 +246,7 @@ class ParkingSpotCard extends StatelessWidget {
       case ParkingSpotType.covered:
         return Icons.roofing;
       case ParkingSpotType.street:
-        return Icons.road;
+        return Icons.add_road;
       case ParkingSpotType.garage:
         return Icons.garage;
       case ParkingSpotType.lot:
